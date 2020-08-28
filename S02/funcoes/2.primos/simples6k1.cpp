@@ -1,5 +1,5 @@
 #include <iostream>
-#include <bits/stdc++.h>    //timer
+#include <ctime>    //timer
 using namespace std;
 
 bool primo (unsigned long long int n){
@@ -44,7 +44,7 @@ int main() {
 
     // Tempo de calculo da rotina 
     double time_taken = double(end - start);    //timer
-    cout << "Tempo de execucao da rotina : " << fixed << time_taken << setprecision(5) << " s " << endl;    //timer   
+    cout << "Tempo de execucao da rotina : " << fixed << time_taken << " s " << endl;    //timer   
 
     return 0;
 }
