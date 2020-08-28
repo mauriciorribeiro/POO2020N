@@ -12,7 +12,7 @@ simples.cpp
 simples6k1.cpp
     Código otimizado utilizando a regra 6*k +- 1
 
-Os executáveis "simples.cpp" e "simples6k1.cpp" são compatíveis com linux x64.
+Os executáveis "simples" e "simples6k1" são compatíveis com linux x64.
 
 
 
