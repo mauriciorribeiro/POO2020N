@@ -1,5 +1,5 @@
 #include <iostream>
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>    //timer
 using namespace std;
 
 bool primo(unsigned long long int n) {
@@ -24,14 +24,14 @@ bool primo(unsigned long long int n) {
 int main() {
     unsigned long long int n;
     bool ePrimo;
-    time_t start, end;
+    time_t start, end;  //timer
 
     cout << "Digite um inteiro positivo: ";
     cin >> n;
 
-    time(&start);
+    time(&start);   //timer
     ePrimo = primo(n);
-    time(&end);
+    time(&end);     //timer
 
     if (ePrimo)
         cout << n << " e' um numero primo\n";
@@ -39,8 +39,8 @@ int main() {
         cout << n << " nao e' um numero primo\n";
 
     // Tempo de calculo da rotina 
-    double time_taken = double(end - start); 
-    cout << "Tempo de execucao da rotina : " << fixed << time_taken << setprecision(5) << " s " << endl;   
+    double time_taken = double(end - start);    //timer
+    cout << "Tempo de execucao da rotina : " << fixed << time_taken << setprecision(5) << " s " << endl;    //timer
 
     return 0;
 }
