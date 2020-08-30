@@ -5,6 +5,5 @@ Semana 02
 
 Código da função que retorna a soma dos n primeiros números naturais ímpares.
 
-**** Em implementação ***
 
 O executável "soman" compatível com linux x64.

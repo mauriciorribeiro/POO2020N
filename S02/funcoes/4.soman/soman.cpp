@@ -2,16 +2,20 @@
 using namespace std;
 
 int soma_impares(int n){
+    int i=1,
+        soma=0;
 
+    while( i < (n*2) ){
+        soma += i;
+        i += 2;
+    }
 
-    return 11;
+    return soma;
     }
 
 int main (void){
     int n;
     
-
-
     cout << "Quantos dos primeiros numeros naturais impares deseja calcular a soma? ";
     cin >> n;
 
