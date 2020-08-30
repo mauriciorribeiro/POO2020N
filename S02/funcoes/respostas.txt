@@ -1,0 +1,128 @@
+Questão 1:
+
+bool dentro_ret (int x0, int y0, int x1, int y1, int x, int y){
+    bool dentroRetangulo;
+    
+    if ( (x >= x0) && (x <= x1) && (y >= y0) && (y <= y1) ) {
+        dentroRetangulo = true;
+    }
+    else
+    {
+        dentroRetangulo = false;
+    }
+    
+    return dentroRetangulo;
+
+    }
+
+
+
+Questão 2:
+
+bool primo(int n) {
+    int i;
+    // 0 e 1 nao sao numeros primos
+    if (n == 0 || n == 1) {
+        return false;
+    }
+    else {
+        for (i = 2; i <= n / 2; ++i) {
+            if (n % i == 0) {
+                return false;
+                break;
+            }
+        }
+    }
+
+
+Questão 3
+
+int fibonacci(int n){
+    //Utilizando a fórmula explicita da sequencia de Fibonacci
+    int fn;
+
+    fn = (int) 1.0/sqrt(5.0) * (pow((1.0 + sqrt(5.0))/2.0, n) - pow((1.0 - sqrt(5.0))/2.0, n));
+    
+    return fn;
+    }
+
+
+
+Questão 4
+
+int soma_impares(int n){
+    int i=1,
+        soma=0;
+
+    while( i < (n*2) ){
+        soma += i;
+        i += 2;
+    }
+
+    return soma;
+    }
+
+
+
+Questão 5
+
+double volume_esfera(int r){
+
+    return (4  * M_PI * pow(r,3) ) / 3;
+
+    }
+
+
+
+Questão 6
+
+double pi(int n){
+    double parcial = 0;
+    for (int i = 0; i <= n; i++) {
+        parcial += pow(-1,i)/(2.0 * i + 1);
+    }
+    
+    return 4*parcial;
+      
+
+}
+
+
+
+Questão 7
+* Item a
+
+    char NotaFinalConceito(float nota); 
+
+
+* Item B 
+
+    float NotaFinal(float nota1, float nota2, float nota3); 
+
+
+* Item C 
+
+    char NotaFinalConceito(float nota1, float nota2, float nota3);  //  * Para não ficar muito chato, usei function overloading.  :-)
+
+
+* Item D 
+
+    //Resposta oficial
+    char NotaFinalConceito(float nota1, float nota2, float nota3){
+    float media = 0;
+    char conceito;
+
+    media = NotaFinal(nota1, nota2, nota3);
+    conceito = NotaFinalConceito(media);
+
+    return conceito; 
+}
+
+*** ia escrever 
+
+    char NotaFinalConceito(float nota1, float nota2, float nota3){
+
+        return NotaFinalConceito(NotaFinal(nota1, nota2, nota3)); 
+}
+
+    //Mas acho que o professor não gostaria muito...    :-)
