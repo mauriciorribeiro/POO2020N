@@ -12,6 +12,7 @@ Compilar usando:
 g++ main.cpp negativos.cpp -o negativos  
 
 
+
 // para compilar primeiro e linkar a seguir
 
 g++ -c main.cpp                         //compila main
