@@ -19,7 +19,7 @@ Compilar usando:
 
      > `g++ -c negativos.cpp` &nbsp; &nbsp; //compila negativos
 
-     > `g++ main.o negativos.o -o negativos` &nbsp; &nbsp; //linka os diversos arquivos &nbsp;   
+     > `g++ main.o negativos.o -o negativos` &nbsp; &nbsp; //linka os diversos arquivos    
 
 
-Executável "negativos" compatível com Linux x64.
+*Executável "negativos" compatível com Linux x64.*
