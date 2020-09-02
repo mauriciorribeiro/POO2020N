@@ -8,14 +8,14 @@ Código separa a declaração e definição da função "negativos" em arquivos 
 Compilar usando:
 
 - Para compilar e linkar os arquivos ao mesmo tempo
-     > g++ main.cpp negativos.cpp -o negativos  
+     > `g++ main.cpp negativos.cpp -o negativos`  
 
 
 - Para compilar primeiro e linkar a seguir
 
-     > `g++ -c main.cpp` &nbsp; **//compila main**
+     > `g++ -c main.cpp` &nbsp; &nbsp; **//compila main**
 
-     > g++ -c negativos.cpp &nbsp; **//compila negativos**
+     > `g++ -c negativos.cpp` &nbsp; &nbsp; **//compila negativos**
 
-     > g++ main.o negativos.o -o negativos &nbsp; **//linka os diversos arquivos**
+     > `g++ main.o negativos.o -o negativos` &nbsp; &nbsp; **//linka os diversos arquivos**
 
