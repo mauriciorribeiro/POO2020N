@@ -6,7 +6,7 @@
 
 Função que recebe como parâmetro um vetor de números inteiros *vet* de tamanho *n* definido e inverte a ordem.
 
-Usa o comando *`make`* para compilar executáveis para Linux, Windows x64 e WIndows x32
+Usa o comando *`make`* para compilar executáveis para Linux, Windows x64 e WIndows x32. Testado em sistema Linux x64, com g++, MinGW cross compiler, e demais dependências resolvidas.
 
 Compilar usando:
 
