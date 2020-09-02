@@ -23,4 +23,4 @@ Compilar usando:
   > `g++ main.o pares.o -o pares` &nbsp; &nbsp; //linka os diversos arquivos
   >
 
-*Executável "negativos" compatível com Linux x64.*
+*Executável "pares" compatível com Linux x64.*
