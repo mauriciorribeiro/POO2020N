@@ -10,17 +10,17 @@ Usa o comando *`make`* para compilar executáveis para Linux, Windows x64 e WInd
 
 Compilar usando:
 
-- Para compilar e linkar os arquivos ao mesmo tempo
-  > `g++ main.cpp inverte.cpp -o inverte`
-  >
-- Para compilar primeiro e linkar a seguir
-  > `g++ -c main.cpp` &nbsp; &nbsp; //compila main
-  >
+- Para compilar para Linux
+  
+  > `make all`
+- Para compilar para Windows x64
+  
+  > `make w64`
+- Para compilar para Windows x32
+  
+  > `make w32`
 
-  > `g++ -c inverte.cpp` &nbsp; &nbsp; //compila negativos
-  >
+*Executável **inverte"** compatível com Linux x64.
+Executável **inverte_x64.exe** compatível com Windows 64.
+Executável **inverte_x32.exe** compatível com WIndows 32.*
 
-  > `g++ main.o inverte.o -o inverte` &nbsp; &nbsp; //linka os diversos arquivos
-  >
-
-*Executável "inverte" compatível com Linux x64.*
