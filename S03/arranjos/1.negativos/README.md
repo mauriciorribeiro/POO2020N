@@ -13,9 +13,9 @@ Compilar usando:
 
 - Para compilar primeiro e linkar a seguir
 
-     > `g++ -c main.cpp` &nbsp; &nbsp; **//compila main**
+     > `g++ -c main.cpp` &nbsp; &nbsp; //compila main
 
-     > `g++ -c negativos.cpp` &nbsp; &nbsp; **//compila negativos**
+     > `g++ -c negativos.cpp` &nbsp; &nbsp; //compila negativos
 
-     > `g++ main.o negativos.o -o negativos` &nbsp; &nbsp; **//linka os diversos arquivos**
+     > `g++ main.o negativos.o -o negativos` &nbsp; &nbsp; //linka os diversos arquivos
 
