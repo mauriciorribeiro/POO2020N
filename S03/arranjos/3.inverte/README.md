@@ -6,7 +6,7 @@
 
 Função que recebe como parâmetro um vetor de números inteiros *vet* de tamanho *n* definido e inverte a ordem.
 
-Código separa a declaração e definição da função "inverte" em arquivos distintos do "main".
+Usa o comando *`make`* para compilar executáveis para Linux, Windows x64 e WIndows x32
 
 Compilar usando:
 
