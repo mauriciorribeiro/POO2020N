@@ -6,7 +6,7 @@
 
 Função que recebe como parâmetro um vetor de números inteiros *vet* de tamanho *n* definido e retorna a quantidade de números pares.
 
-Código separa a declaração e definição da função "negativos" em arquivos distintos do "main".
+Código separa a declaração e definição da função "pares" em arquivos distintos do "main".
 
 Compilar usando:
 
