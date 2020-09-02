@@ -1,8 +1,8 @@
 # POO2020N
-## Programaçao Orientada a Objetos
+### Programaçao Orientada a Objetos
 
 
-### Questão 1
+#### Questão 1
 Função que recebe como parâmetro um vetor de números reais *vet* de tamanho *n* definido e retorna a quantidade de ítens negativos.
 
 Código separa a declaração e definição da função "negativos" em arquivos distintos do "main".
