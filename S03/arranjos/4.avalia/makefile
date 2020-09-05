@@ -29,3 +29,6 @@ avalia_x32.exe:
 
 clean:
 	rm -rf *.o *~ avalia
+
+
+

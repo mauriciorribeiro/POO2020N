@@ -2,7 +2,7 @@
 #include <iomanip> 
 #include <cmath>
 
-#include "avalia.h"
+#include ".././include/avalia.h"
 
 using namespace std;
 

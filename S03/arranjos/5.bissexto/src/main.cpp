@@ -2,7 +2,7 @@
 #include <iomanip> 
 #include <cmath>
 
-#include "avalia.h"
+#include "bissexto.h"
 
 using namespace std;
 
@@ -16,9 +16,9 @@ int main() {
     for(int i =grau; i>=0; i--){
         cout << " ";
         if (polinomio[i]>0) 
-            cout << "+ " << polinomio[i];
+            cout << "+" << polinomio[i];
         else if (polinomio[i]<0)
-            cout << "- " << abs(polinomio[i]);
+            cout << "-" << abs(polinomio[i]);
         if (i>1)
             cout << "x" << i;
         else if (i==1)
