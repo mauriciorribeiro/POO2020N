@@ -12,17 +12,15 @@ int main(int argc, char *argv[]) {
    // double x = 6.0;
 
     if (argc == 1 ) {
-        cout << "Digite o ano: ";
+        cout << "Digite o ano (com 4 digitos): ";
         cin >> ano;
     }
     else {
         ano = atoi(argv[1]);
     }
 
+    cout << "O ano " << ano << (ano_bissexto(ano) ? " E' bissexto." : " NAO e' bissexto.") << endl; 
 
-
-
-    return 0;
 }
 
 
