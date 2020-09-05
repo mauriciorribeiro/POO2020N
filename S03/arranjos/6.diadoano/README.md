@@ -8,6 +8,8 @@ Função que recebe como parâmetro um vetor de números *double* *polinomio* de
 
 Usa o comando *`make`* para compilar executáveis para Linux, Windows x64 e WIndows x32. Testado em sistema Linux x64, com g++, MinGW cross compiler, e demais dependências resolvidas.
 
+Códigos estão nas pastas *src* : *.cpp  e  *include* : *.h
+
 Compilar usando:
 
 - Para compilar para Linux
@@ -19,8 +21,6 @@ Compilar usando:
 - Para compilar para Windows x32
   > `make w32`
   >
-
-
 
 Executáveis encontram-se na pasta **build**.
 
