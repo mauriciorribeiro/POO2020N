@@ -10,7 +10,7 @@ incDir = ./include/
 buildDir = ./build/
 objDir = ${buildDir}objects/
 
-all: ${buildDir}avalia
+all: ${buildDir}diadoano
 
 ${buildDir}avalia: ${objDir}main.o ${objDir}avalia.o
 	g++ -o ${buildDir}avalia ${objDir}main.o ${objDir}avalia.o
