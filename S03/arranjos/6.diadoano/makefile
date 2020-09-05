@@ -24,12 +24,12 @@ ${objDir}avalia.o: ${srcDir}avalia.cpp ${incDir}avalia.h
 w64: ${buildDir}avalia_x64.exe
 	
 ${buildDir}avalia_x64.exe:
-	x86_64-w64-mingw32-g++ -o ${buildDir}avalia_x64.exe ${srcDir}main.cpp ${srcDir}avalia.cpp --static
+	x86_64-w64-mingw32-g++ -o ${buildDir}avalia_x64.exe ${srcDir}main.cpp ${srcDir}avalia.cpp --static -Iinclude/
 
 w32: ${buildDir}avalia_x32.exe
 	
 ${buildDir}avalia_x32.exe:
-	i686-w64-mingw32-g++ -o ${buildDir}avalia_x32.exe ${srcDir}main.cpp ${srcDir}avalia.cpp --static
+	i686-w64-mingw32-g++ -o ${buildDir}avalia_x32.exe ${srcDir}main.cpp ${srcDir}avalia.cpp --static -Iinclude/
 
 clean:
 	rm -rf ${objDir}*.o ${buildDir}avalia*
