@@ -1,4 +1,4 @@
-#include ".././include/avalia.h"
+#include "avalia.h"
 #include <cmath>
 
 using namespace std;

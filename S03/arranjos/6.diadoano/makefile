@@ -16,10 +16,10 @@ ${buildDir}avalia: ${objDir}main.o ${objDir}avalia.o
 	g++ -o ${buildDir}avalia ${objDir}main.o ${objDir}avalia.o
 
 ${objDir}main.o: ${srcDir}main.cpp ${incDir}avalia.h
-	g++ -o ${objDir}main.o ${srcDir}main.cpp -c 
+	g++ -o ${objDir}main.o ${srcDir}main.cpp -c -Iinclude/
 
 ${objDir}avalia.o: ${srcDir}avalia.cpp ${incDir}avalia.h
-	g++ -o ${objDir}avalia.o ${srcDir}avalia.cpp -c 
+	g++ -o ${objDir}avalia.o ${srcDir}avalia.cpp -c -Iinclude/
 
 w64: ${buildDir}avalia_x64.exe
 	
