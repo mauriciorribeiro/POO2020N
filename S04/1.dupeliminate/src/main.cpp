@@ -4,17 +4,17 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    const int max = 5; // Quantidade de números lidos
+    const int max = 5; // Quantidade de numeros lidos
     int num;
     vector<int> lista;
-    bool gui = true; // Controla a exibição ou não da saida em texto detalhada
+    bool gui = true; // Controla a exibicao ou nao da saida em texto detalhada
 
-    if (argv[2]==0)  //caso o executável tenha como argumento de linha de comando 0, desabilita exibição detalhada
+    if (argv[2]==0)  //caso argumento linha de comando == 0, desabilita exibicao detalhada
         gui = false;
 
     for (int i=0; i<max; i++){
         bool existe = false;
-        if (gui) { // Exibição detalhada
+        if (gui) { // Exibicao detalhada
             cout << "\033c";  // Limpa a tela
             cout << " Eliminacao de Duplicatas " << endl;
             cout << " ------------------------"  << endl << endl;
