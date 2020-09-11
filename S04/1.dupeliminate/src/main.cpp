@@ -1,27 +1,43 @@
 #include <iostream>
-
-#include "arranjos.h"
+#include <vector> 
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    int dia, mes, ano;
+    const int max = 5; // Quantidade de números lidos
+    int num;
+    vector<int> lista;
+    bool gui = true; // Controla a exibição ou não da saida em texto detalhada
 
-    if (argc == 1 ) {
-        cout << "Digite o dia: ";
-        cin >> dia;
-        cout << "Digite o mes (com dois digitos): ";
-        cin >> mes;
-        cout << "Digite o ano (com 4 digitos): ";
-        cin >> ano;
-    }
-    else if (argc == 4) {
-        dia = atoi(argv[1]);
-        mes = atoi(argv[2]);
-        ano = atoi(argv[3]);
+    if (argv[2]==0)  //caso o executável tenha como argumento de linha de comando 0, desabilita exibição detalhada
+        gui = false;
+
+    for (int i=0; i<max; i++){
+        bool existe = false;
+        if (gui) { // Exibição detalhada
+            cout << "\033c";  // Limpa a tela
+            cout << " Eliminacao de Duplicatas " << endl;
+            cout << " ------------------------"  << endl << endl;
+            cout << "   Lista Atual: {";
+            for (int elem : lista) cout << " " << elem;
+            cout << " }";
+            cout << endl << "   Itens da Lista: " << lista.size();
+            cout << "     Itens digitados: " << i << endl;
+        }
+        cout << endl << "   Digite um numero no intervalo [10,100]: ";
+        cin >> num;
+        for (int elem : lista){
+            if (elem == num)    existe = true;
+        }
+        if (num>=10 && num <=100 && !existe)    lista.push_back(num);
     }
 
-    cout << "A data " << dia << "/" << mes << "/" << ano << " é o dia numero " << dia_do_ano(dia,mes,ano) << " do ano." << endl;
+    cout << "   -------------------------------------------------";
+    cout << endl << "   Lista com valores unicos:  { ";   
+    for (int i = 0; i < lista.size(); i++){
+        cout << lista[i] << " ";
+    }
+    cout << "}" << endl << endl;
     
 }
 

@@ -2,9 +2,9 @@
 
 ### Programaçao Orientada a Objetos
 
-#### Questão 6
+#### Questão 1
 
-Função que recebe como parâmetro um vetor de números *double* *polinomio* de grau *grau* e o avalia em função de x dado.
+Um arranjo unidimensional num aplicativo que insere cinco números, cada um entre 10 e 100, inclusive.
 
 Usa o comando *`make`* para compilar executáveis para Linux, Windows x64 e WIndows x32. Testado em sistema Linux x64, com g++, MinGW cross compiler, e demais dependências resolvidas.
 
@@ -24,6 +24,6 @@ Compilar usando:
 
 Executáveis encontram-se na pasta **build**.
 
-*Executável **diadoano** compatível com Linux x64.
-Executável **diadoano_x64.exe** compatível com Windows 64.
-Executável **diadoano_x32.exe** compatível com WIndows 32.*
+*Executável **file** compatível com Linux x64.
+Executável **file_x64.exe** compatível com Windows 64.
+Executável **file_x32.exe** compatível com WIndows 32.*
