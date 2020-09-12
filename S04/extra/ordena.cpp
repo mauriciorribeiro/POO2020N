@@ -1,3 +1,5 @@
+//Ordenação NAO de acordo com a questão
+
 #include <iostream>
 using namespace std;
 
