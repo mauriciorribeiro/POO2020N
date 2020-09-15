@@ -2,7 +2,7 @@
 
 ### Programaçao Orientada a Objetos
 
-#### Questão 1
+#### Questão 2
 
 Um arranjo unidimensional num aplicativo que insere cinco números, cada um entre 10 e 100, inclusive.
 
