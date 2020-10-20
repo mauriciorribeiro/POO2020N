@@ -4,9 +4,11 @@
 using namespace std;
 
 string LIMPATELA = "\033c";
-const int NUMEROASSENTOS = 2;          // Numero total de assentos
-const int INICIOCLASSEECONOMICA = 1;    // Numero que indica a partir de qual assento a classe é economica iniciando de 0
-                                        // Exemplo: Iniciando na poltrona 6, colocar 5  
+const int NUMEROASSENTOS = 10;          // Numero total de assentos
+// Numero que indica a partir de qual assento a classe e economica iniciando de 0
+// Exemplo: Iniciando na poltrona 6, colocar 5
+const int INICIOCLASSEECONOMICA = 5;    
+                                          
 
 void ImprimeCabecalho(void);
 void ImprimeCabecalho(string nome);
@@ -19,7 +21,7 @@ int main(void){
 
     string passageiros[NUMEROASSENTOS] {};
     // bool assentos[numeroAssentos] {0,0,0,0,0,0,0,0,0,0}; poderia ser utilizado.
-    // mas perderíamos o redimensionamento no numero de assentos
+    // mas perderiamos o redimensionamento no numero de assentos
     bool assentosOcupados[NUMEROASSENTOS] {};   for(auto elem : assentosOcupados) elem = false;
     string nome[NUMEROASSENTOS] {};
     string nomeAux;
@@ -75,7 +77,7 @@ int main(void){
             if (troca)
                 classe = 2;
             else {
-                cout << " O próximo vôo parte em 3 horas" << endl;
+                cout << " O proximo voo parte em 3 horas" << endl;
                 cout << " Digite 1 para continuar ou 0 para encerrar o programa: ";
                 cin >> temp;
                 if (temp)
@@ -92,7 +94,7 @@ int main(void){
             if (troca)
                 classe = 1;
             else {
-                cout << " O próximo vôo parte em 3 horas" << endl;
+                cout << " O proximo voo parte em 3 horas" << endl;
                 cout << " Digite 1 para continuar ou 0 para encerrar o programa: ";
                 cin >> temp;
                if (temp)
