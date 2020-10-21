@@ -27,7 +27,7 @@ void conta_destroi(conta_bancaria* c){
 
 void conta_deposita(conta_bancaria* c, float deposito){
     //Condicoes de retorno sem executar operacoes
-    if (deposito < 0) {
+    if (deposito < 0) {         // Deposito deve ser um valor positivo
         return;
     }
 
@@ -42,11 +42,11 @@ void conta_deposita(conta_bancaria* c, float deposito){
 
 void conta_saca(conta_bancaria* c, float saque){
     //Condicoes de retorno sem executar operacoes
-    if (saque <= 0) {
+    if (saque <= 0) {           // Saque deve ser um valor positivo
         return;
     }
 
-    if (c->saldo <= saque){
+    if (c->saldo <= saque){     // Deve haver saldo na conta maior que o valor do saque
         return;
     }
 
@@ -61,11 +61,11 @@ void conta_saca(conta_bancaria* c, float saque){
 
 void conta_transfere(conta_bancaria* cOrigem, conta_bancaria* cDestino, float valor){
     //Condicoes de retorno sem executar operacoes
-    if (valor <= 0) {
+    if (valor <= 0) {           // Transferencia deve ser um valor positivo
         return;
     }
 
-    if (cOrigem->saldo <= valor){
+    if (cOrigem->saldo <= valor){   // Deve haver saldo na conta origem maior que o valor da transferencia
         return;
     }
 
